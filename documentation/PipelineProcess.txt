@@ -1,0 +1,18 @@
+Pipline Jobs 
+
+        Backend:  Install Dependencies command --> cd udagram-api && npm install,
+        Frontend: Install Dependencies command --> cd udagram-frontend && npm install,
+        Backend:  Build command --> cd udagram-api && npm run build,
+        Frontend: Build command --> cd udagram-frontend && npm run build,
+        Backend:  Deploy command --> cd udagram-api && npm run deploy,
+        Frontend: Deploy command --> cd udagram-frontend && npm run deploy
+
+
+Backend Deploy Script 
+        cd ./www
+        eb init $EB_APP --region $AWS_REGION --platform node.js
+        eb use $EB_ENV
+        eb deploy
+
+Frontend Deploy Script 
+        aws s3 cp --recursive --acl public-read ./www s3://$AWS_BUCKET/

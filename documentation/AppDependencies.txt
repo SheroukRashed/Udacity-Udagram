@@ -1,0 +1,13 @@
+AWS infrastructure requirements:
+	AWS IAM user configured with permissions for deploying front and back-end applications
+	An AWS S3 bucket configured for Static Website Hosting to host the front-end webpage
+	AWS Elastic Beanstalk Environment running Node.js 14
+	AWS RDS instance running a Postgres database
+
+Build & Deployment environment requirements:
+	NodeJS 14
+	NPM
+
+For CI/CD Pipeline:
+	CircleCI 
+    GitHub repo
