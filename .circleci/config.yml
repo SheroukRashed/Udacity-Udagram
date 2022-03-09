@@ -6,8 +6,7 @@ orbs:
 jobs:
   build:
     branches:
-      only: 
-        - master
+      only: master
     docker:
       - image: "cimg/base:stable"
     executor: node/default
