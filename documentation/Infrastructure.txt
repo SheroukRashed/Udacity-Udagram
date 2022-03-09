@@ -1,8 +1,8 @@
 Backend Environment:
-        URL: http://udagram-env.eba-ncqucfci.us-east-1.elasticbeanstalk.com/
+        URL: http://udacity-udagram.eba-ncqucfci.us-east-1.elasticbeanstalk.com/
         Database endpoint: postgres.culwtxrpuycu.us-east-1.rds.amazonaws.com
         Application name: Udagram
-        Environment name: Udagram-env
+        Environment name: Udacity-Udagram
 
 Frontend Environment:
         S3 bucket: udagram-new-bucket

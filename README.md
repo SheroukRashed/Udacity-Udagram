@@ -1,15 +1,63 @@
 # Udagram
 
-This application is provided to you as an alternative starter project if you do not wish to host your own code done in the previous courses of this nanodegree. The udagram application is a fairly simple application that includes all the major components of a Full-Stack web application.
+This application is a simple application that is used to apply hosting principals using AWS services along with CI/CD principals using circleci integeration. 
+The udagram application is a fairly simple application that includes all the major components of a Full-Stack web application.
 
 ## Getting Started
 
-1. Clone this repo locally into the location of your choice.
-1. Move the content of the udagram folder at the root of the repository as this will become the main content of the project.
-1. Open a terminal and navigate to the root of the repo
-1. follow the instructions in the installation step
+In order to test deployment on CircleCI 
 
-The project can run but is missing some information to connect to the database and storage service. These will be setup during the course of the project
+1 - Upload code on your github repository.
+
+2 - In the environment variables of your project in circleCi add the following variables.
+
+    -   POSTGRES_USERNAME = *******
+    -   POSTGRES_PASSWORD = *******
+    -   POSTGRES_DB = *******
+    -   PORT = *******
+    -   POSTGRES_HOST = ****************************
+    -   AWS_REGION = *******
+    -   AWS_DEFAULT_REGION = *******
+    -   URL = ******************************************
+    -   JWT_SECRET = *******
+    -   EB_APP = *******
+    -   EB_ENV = *******
+    -   AWS_BUCKET = *******
+    -   AWS_ACCESS_KEY_ID - IAM user access key for AWScli and elastic beanstalk deployment
+    -   AWS_SECRET_ACCESS_KEY - Secret for IAM user
+
+3 - Start the deployment process.
+
+In order to view current deployment on S3 
+
+Frontend Environment:
+        S3 bucket: udagram-new-bucket
+        S3 URL: http://udagram-new-bucket.s3-website-us-east-1.amazonaws.com
+
+![Alt text](documentation/screen_shots/Screen Shot 2022-03-08 at 12.03.19 AM.png "Frontend Environment")
+
+
+In order to view current deployment on Elastic beanstalk
+
+Backend Environment:
+        URL: http://udacity-udagram.eba-ncqucfci.us-east-1.elasticbeanstalk.com/
+
+![Alt text](documentation/screen_shots/Screen Shot 2022-03-09 at 8.53.02 PM.png "Backend Environment")
+
+        Database endpoint: postgres.culwtxrpuycu.us-east-1.rds.amazonaws.com
+
+![Alt text](documentation/screen_shots/Screen Shot 2022-03-08 at 12.03.19 AM.png "Database endpoint")
+
+        Application name: Udagram
+        Environment name: Udacity-Udagram
+
+Deployment Pipeline:
+        CircleCI 
+        GitHub project - https://github.com/SheroukRashed/Udacity-Udagram.git
+
+![Alt text](documentation/screen_shots/Screen Shot 2022-03-09 at 9.02.01 PM.png "Deployment Pipeline")
+
+### Illustration Diagram
 
 ### Dependencies
 
@@ -24,17 +72,21 @@ The project can run but is missing some information to connect to the database a
 
 - A S3 bucket for hosting uploaded pictures.
 
+- An Elastic Beanstalk for hosting backend and APIs
+
+- CircleCI Integrated with github to run the deployment process
 ```
 
-### Installation
+### Package.json script
 
-Provision the necessary AWS services needed for running the application:
-
-1. In AWS, provision a publicly available RDS database running Postgres. <Place holder for link to classroom article>
-1. In AWS, provision a s3 bucket for hosting the uploaded files. <Place holder for tlink to classroom article>
-1. Export the ENV variables needed or use a package like [dotnev](https://www.npmjs.com/package/dotenv)/.
-1. From the root of the repo, navigate udagram-api folder `cd starter/udagram-api` to install the node_modules `npm install`. After installation is done start the api in dev mode with `npm run dev`.
-1. Without closing the terminal in step 1, navigate to the udagram-frontend `cd starter/udagram-frontend` to intall the node_modules `npm install`. After installation is done start the api in dev mode with `npm run start`.
+  "backend:install": "cd udagram-api && npm install",
+        "frontend:install": "cd udagram-frontend && npm install",
+        "backend:build": "cd udagram-api && npm run build",
+        "frontend:build": "cd udagram-frontend && npm run build",
+        "backend:test": "cd udagram-api && npm run test",
+        "frontend:test": "cd udagram-frontend && npm run test",
+        "backend:deploy": "cd udagram-api && npm run deploy",
+        "frontend:deploy": "cd udagram-frontend && npm run deploy"
 
 ## Testing
 
