@@ -59,7 +59,13 @@ Deployment Pipeline:
 
 ### Illustration Diagram
 
+- Infrastructure of the application
 
+![Alt text](https://github.com/SheroukRashed/Udacity-Udagram/blob/master/documentation/screen_shots/b8ed48be1946912a5e0da263c1fc8f17.png "Infrastructure of the application")
+
+- Piplining
+
+![Alt text](https://github.com/SheroukRashed/Udacity-Udagram/blob/master/documentation/screen_shots/68747470733a2f2f64302e6177737374617469632e636f6d2f706172746e65722d6e6574776f726b2f517569636b53746172742f646f746e65742d7365727665726c6573732d636963642d6172636869746563747572652e706e67.png "Piplining")
 
 ### Dependencies
 
