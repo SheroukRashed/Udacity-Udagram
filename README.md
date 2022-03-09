@@ -34,7 +34,7 @@ Frontend Environment:
         S3 bucket: udagram-new-bucket
         S3 URL: http://udagram-new-bucket.s3-website-us-east-1.amazonaws.com
 
-![Alt text](documentation/screen_shots/Screen Shot 2022-03-08 at 12.03.19 AM.png "Frontend Environment")
+![Alt text](https://github.com/SheroukRashed/Udacity-Udagram/blob/master/documentation/screen_shots/Screen%20Shot%202022-03-08%20at%2012.03.19%20AM.png "Frontend Environment")
 
 
 In order to view current deployment on Elastic beanstalk
@@ -42,11 +42,11 @@ In order to view current deployment on Elastic beanstalk
 Backend Environment:
         URL: http://udacity-udagram.eba-ncqucfci.us-east-1.elasticbeanstalk.com/
 
-![Alt text](documentation/screen_shots/Screen Shot 2022-03-09 at 8.53.02 PM.png "Backend Environment")
+![Alt text](https://github.com/SheroukRashed/Udacity-Udagram/blob/master/documentation/screen_shots/Screen%20Shot%202022-03-09%20at%208.53.02%20PM.png "Backend Environment")
 
         Database endpoint: postgres.culwtxrpuycu.us-east-1.rds.amazonaws.com
 
-![Alt text](documentation/screen_shots/Screen Shot 2022-03-08 at 12.03.19 AM.png "Database endpoint")
+![Alt text](https://github.com/SheroukRashed/Udacity-Udagram/blob/master/documentation/screen_shots/Screen%20Shot%202022-03-08%20at%2012.03.03%20AM.png "Database endpoint")
 
         Application name: Udagram
         Environment name: Udacity-Udagram
@@ -55,7 +55,7 @@ Deployment Pipeline:
         CircleCI 
         GitHub project - https://github.com/SheroukRashed/Udacity-Udagram.git
 
-![Alt text](documentation/screen_shots/Screen Shot 2022-03-09 at 9.02.01 PM.png "Deployment Pipeline")
+![Alt text](https://github.com/SheroukRashed/Udacity-Udagram/blob/master/documentation/screen_shots/Screen%20Shot%202022-03-09%20at%209.02.01%20PM.png "Deployment Pipeline")
 
 ### Illustration Diagram
 
