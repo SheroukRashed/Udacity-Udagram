@@ -5,10 +5,10 @@ orbs:
   eb: circleci/aws-elastic-beanstalk@2.0.1
 jobs:
   build:
-    - branches:
-      - only: master
     docker:
       - image: "cimg/base:stable"
+    branches:
+      - only: master
     executor: node/default
     steps:
       - node/install
